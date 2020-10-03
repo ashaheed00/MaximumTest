@@ -1,2 +1,2 @@
 #MaximumTest
-Version TC1.2
+Version TC1.3

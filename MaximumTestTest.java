@@ -1,4 +1,4 @@
-// TC1.2
+// TC1.3
 
 import static org.junit.Assert.*;
 
@@ -9,7 +9,7 @@ public class MaximumTestTest {
 	
 	@Test
 	public void testMaximumNumber() {
-		assertEquals((Integer) 4, MaximumTest.maxNumber(2, 4, -9));
+		assertEquals((Integer) 9, MaximumTest.maxNumber(2, -4, 9));
 	}
 
 }
