@@ -1,36 +1,12 @@
-// Version UC3
+// Version Refactor1
 
 public class MaximumTest {
 	
-	// UC1
-	public static Integer maxNumber(Integer a, Integer b, Integer c) {
-		Integer max = a;
-		if (b.compareTo(max) > 0)
-			max = b;
-		if (c.compareTo(max) > 0)
-			max = c;
-		return max;
-	}
-
-
-	// UC2
-	public static Float maxNumber(Float a, Float b, Float c) {
-		Float max = a;
-		if (b.compareTo(max) > 0)
-			max = b;
-		if (c.compareTo(max) > 0)
-			max = c;
-		return max;
-	}
-	
-	// UC3
-	public static String maxString(String a, String b, String c) {
-		String max = a;
-		if (b.compareTo(max) > 0)
-			max = b;
-		if (c.compareTo(max) > 0)
-			max = c;
-		return max;
+	@Test
+	public void testMaximum() {
+		assertEquals((Integer) 6, MaximumTest.maximum(4, 6, -9));
+		assertEquals((Float) 4.5f, MaximumTest.maximum(4.5f, 2.6f, -9.8f));
+		assertEquals("Peach", MaximumTest.maximum("Banana", "Apple", "Peach"));
 	}
 
 }
