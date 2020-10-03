@@ -1,2 +1,2 @@
 #MaximumTest
-Version UC3
+Version TC3
