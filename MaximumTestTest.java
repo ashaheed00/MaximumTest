@@ -6,20 +6,30 @@ public class MaximumTestTest {
 
 	@Test
 	public void testMaximumInteger() {
-		maximumTest = new MaximumTest<>(2, 8, -12);
-		assertEquals(8, maximumTest.maximum());
+		// taking 5 parameters in
+		maximumTest = new MaximumTest<>(2, 8, -12, 61, 9);
+		assertEquals(61, maximumTest.maximum());
 	}
 
 	@Test
 	public void testMaximumFloat() {
-		maximumTest = new MaximumTest<>(4.5f, 2.6f, -9.8f);
+		// taking 4 parameters in
+		maximumTest = new MaximumTest<>(4.5f, 2.6f, -9.8f, 2.1f);
 		assertEquals(4.5f, maximumTest.maximum());
 	}
 
 	@Test
 	public void testMaxString() {
-		maximumTest = new MaximumTest<>("Banana", "Apple", "Peach");
+		// taking 2 parameters in
+		maximumTest = new MaximumTest<>("Mango", "Peach");
 		assertEquals("Peach", maximumTest.maximum());
+	}
+
+	@Test
+	public void testMaximumWithNoElement() {
+		// taking 5 parameters in
+		maximumTest = new MaximumTest<>();
+		assertEquals(null, maximumTest.maximum());
 	}
 
 }
