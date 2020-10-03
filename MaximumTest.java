@@ -1,4 +1,4 @@
-// Version UC4
+// Version UC5
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -15,6 +15,7 @@ public class MaximumTest<T extends Comparable<T>> {
 	}
 
 	public T maximum() {
+		printMax();
 		return MaximumTest.maximum(list);
 	}
 
@@ -22,9 +23,12 @@ public class MaximumTest<T extends Comparable<T>> {
 		try {
 			return Collections.max(list);
 		} catch (NoSuchElementException e) {
-			System.err.println("There is no element. Pass atleast one element.");
 			return null;
 		}
+	}
+
+	public void printMax() {
+		System.out.println("Maximum of " + list + " => " + MaximumTest.maximum(list));
 	}
 
 }

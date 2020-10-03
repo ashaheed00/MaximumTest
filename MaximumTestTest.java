@@ -27,7 +27,8 @@ public class MaximumTestTest {
 
 	@Test
 	public void testMaximumWithNoElement() {
-		// taking 5 parameters in
+		// taking no parameter
+		// should return null instead of throwing an error
 		maximumTest = new MaximumTest<>();
 		assertEquals(null, maximumTest.maximum());
 	}
